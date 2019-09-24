@@ -1,0 +1,251 @@
+\documentclass[a4paper,12pt]{article}
+%-----------------------------------------------------------
+%\usepackage[top=0.75in, bottom=0.65in, left=0.55in, right=0.85in]{geometry}
+\usepackage[top=0.75in, bottom=0.45in, left=0.28in, right=0.38in]{geometry}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{palatino}
+\usepackage{tabularx}
+%\fontfamily{SansSerif}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%- my pakage
+\usepackage{tikz}
+%\usepackage[margin=1in]{geometry}% Just for this example
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%- my pakage
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=blue,%cyan,
+}
+\usepackage{xcolor}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%- my pakage
+\selectfont
+
+\usepackage[T1]{fontenc}
+%\usepackage
+%[ansinew]
+%[utf8]
+%{inputenc}
+
+\usepackage{uarial}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{blindtext}
+
+\usepackage{color}
+\definecolor{mygrey}{gray}{0.75}
+\textheight=9.75in
+\raggedbottom
+
+\setlength{\tabcolsep}{0in}
+\newcommand{\isep}{-2 pt}
+\newcommand{\lsep}{-0.5cm}
+\newcommand{\psep}{-0.6cm}
+\renewcommand{\labelitemii}{$\circ$}
+
+\pagestyle{empty}
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\small \colorbox{mygrey}{\begin{minipage}{0.975\textwidth}{\textbf{#1 \vphantom{p\^{E}}}}\end{minipage}}}}
+\newcommand{\ressubheading}[3]{
+\begin{tabular*}{6.62in}{l @{\extracolsep{\fill}} r}
+	\textsc{{\textbf{#1}}} & \textsc{\textit{[#2]}} \\
+\end{tabular*}\vspace{-8pt}}
+%-----------------------------------------------------------
+
+%%%%%%%%%%%%%%%%% PREAMBLE %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\graphicspath{ {images/}} %upload your signature to this file
+
+%Skype information - include your Skype name for a link to add you on Skype
+\newcommand*{\Skype}{\href{https://login.skype.com/login?message=signin_continue}{saini.rajkumar}} 
+\newcommand{\Absender}[1][\normalsize]{\Skype} 
+
+%Changes the page numbers - {arabic}=arabic numerals, {gobble}=no page numbers, {roman}=Roman numerals
+\pagenumbering{gobble}
+%%%%%%%%%%%%%%%%% END OF PREAMBLE %%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\pagenumbering{roman}
+\pagenumbering{arabic}
+\usepackage{lastpage}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\pagestyle{plain}
+\fancyhf{} % sets both header and footer to nothing
+\rhead{{\textit{Projects -Dr. Raj}}}
+\lhead{~}
+
+\rfoot{Page \thepage{\theCurrentPage} of {\pageref{LastPage}}}
+
+%\cfoot{Page \thepage\ (\theCurrentPage) of \lastpageref{LastPages}}
+%\cfoot{\thepage\ of \pageref{LastPage}}
+\renewcommand{\headrulewidth}{0pt}
+% your new footer definitions here
+ 
+
+%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+\hspace{0.5cm}\\[-1.5cm]
+%%-----------------------------open-------------------------------------
+%%%%%%%%%%%%%%%%%% CURRICULUM VITAE OF APPLICANT %%%%%%%%%%%%%%%%%%%
+%\begin{center}
+%  \LARGE{\textbf{RAJ KUMAR SAINI}}
+%  \end{center}  \\
+%\vspace{-1ex}
+%%%%%%%%%%%%%%%%%% CURRICULUM VITAE OF APPLICANT end %%%%%%%%%%%%%%%%%%%
+%\hline 
+%\normalsize
+%%%%%%%%%%%%%%%%%%%%%%%%%%----------------------------------------%%%%%%%%%%%%%%%%%
+%\vspace{-2ex}
+%
+%%%%%%%%%%%%%%%%%% CONTACT INFORMATION %%%%%%%%%%%%%%%%%
+%% Your email address, website, and Skype name are links to send email, open your website and add you on Skype.
+%\begin{figure*}[h]
+%  \vspace*{\floatsep}
+%\vspace{-1ex}
+%
+%  \begin{minipage}{0.6\linewidth} %0.4
+%    \centering\begin{tabular}{lcc}
+%Department of Energy Science and Engineering  \\
+%Indian Institute of Technology Bombay  \\
+%Mumbai, Maharashtra (INDIA) - 400076    \\
+%Email : \href{mailto:raj.km.saini@gmail.com}{\textbf{raj.km.saini@gmail.com}}  \\
+%\hspace{0.46in}   \href{mailto:raj_km_saini@yahoo.com}{\textbf{raj\_km\_saini@yahoo.com}} \\
+%Skype : {\textbf{\Absender}} \\
+%Mobile : \textbf{\href{contact-primary:+919820699744}{+91 9820699744} } \\
+%\hspace{0.48in}  \textbf{\href{contact-alternative:+919082609631}{+91 9082609631} }        
+%    \end{tabular}
+%  \end{minipage}%
+%  %%%%%%%%%%%%%%%%%%%%%%%%
+%  \hspace{0.13in}
+%    {\begin{minipage}{0.4\linewidth}  %0.3
+%    \centering\begin{tabular}{lcc}
+%\textbf{Address for correspondence:}  \\
+%MRSB (MANAS-QIP) - 607 \\ %C/o: Dr. Mahendra Singh Saini \\
+%Opp. Vihar House\\ %316/1, New Adarsh Nagar \\
+%IIT Bombay, Powai \\ %Roorkee, Haridwar \\
+%Maharashtra- 400076\\ %Uttrakhand - 247667 \\
+%%Mobile : \textbf{\href{contact-primary:+919719173505}{+919719173505} } \\
+%~\\
+%~\\  
+%~\\      
+%    \end{tabular}
+%  \end{minipage}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%%  \begin{minipage}{0.3\linewidth}
+%%    \hspace{0.1in}\centering\includegraphics[height=0.55\linewidth, width=.5\linewidth]{Photo_raj_kumar_saini1}
+%%  \end{minipage}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%  
+%\end{figure*}%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%------------------%%%%%%%%%%%%%%%%%%%%%%%%%
+%\vspace{-2ex}
+%\hline
+%%-----------------------------closed-------------------------------------
+
+%%%%%%%%%%%%%%%%% CONTACT INFORMATION  end %%%%%%%%%%%%%%%%%
+\vspace{1.0ex}
+
+%%%%%%%%%%%%%%%%%-----------------------------------------%%%%%%%%%%%%%%%%%
+\hspace{0.5cm}\\[-0.52cm]
+
+\noindent
+
+%%%%%%%%%%%%%%%%%---------------------MAJOR PROJECTS UNDERTAKEN-------------------%%%%%%%%%%%%%%%%%
+{\includegraphics[scale=0.5]{Images/projects_m} {\color[rgb]{0.0, 0.45, 1.0}\large{\textbf{MAJOR PROJECTS UNDERTAKEN}} }}\\ \\[\lsep]
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{0.25cm}
+{\color[rgb]{0.0, 0.45, 1.0} \hline }
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{itemize}
+
+\item \textbf{Efficient Shower for bathing - PRAYAS project, SINE IIT Bombay},(Feb 2018 – Mar 2018)
+
+{Project description: Numerical simulations performed in a bathing shower nozzle for efficient water discharge for a better user experience. Building high-efficient shower head for bathing which can save up to 70\% in comparison to traditional showers. In this shower, water nozzles contribute to 80\% of the desired effect.  In this work, the numerically investigated the hydrodynamics of flow in a bathing shower nozzle at different operating conditions. Objective of this work is to develop a efficient bathing shower nozzle design for optimal water discharge using CFD.} 
+\begin{itemize}
+  \item Conditions: Fluid: Water, incompressible; Inlet pressure of water: 1 bar to 7 bar (Optimum pressure: 4 bar); Operating force: Gravity; Input size: 7mm diameter; Output size: 0.4mm diameter; Desired outlet flow: 1 litre per minute; Material: pick plastic or polycarbonate.
+  \item Analyze: Pressure profile along the length of nozzle; Back pressure in the nozzle; Velocity profile; Directional movement of water in the nozzle (particularly at the blocks/turns); Mass flow rate in terms of static pressure and ambient pressure; Kinetic energy at the outlet of nozzle when water dissipates into virtually infinite volume and Change in the mass flow rate with the inclusion of temperature.
+\end{itemize}
+
+\item \textbf{Shell and Tube Heat exchanger, Chakr Innovation Private Limited, Delhi},(Aug 2017 – Oct 2017)
+
+{Project description: Numerical simulations are performed in a heat exchanger at high Reynolds number. Heat exchanger consistes 24 tubes and enclosed water jacket. It is a simple shell and tube type of a design with 3 baffle plates i.e. 4 passes. Exhaust is flowing inside the tubes and cooling water outside. The objective of this work, the numerically investigated the pressure drop and temperature drop of the exhaust between inlet and outlet, heat transfer coefficient for heat transfer from metal tubes to water and temperature of water in the heat exchanger.} 
+\begin{itemize}
+  \item Analyzes: With inlet temperature of exhaust as 850K and 24 tubes; With inlet temperature of exhaust as 650K and 24 tubes; With inlet temperature of exhaust as 850K and 29 tubes; With inlet temperature of exhaust as 650K and 29 tubes 
+\end{itemize}
+
+
+\item \textbf{CFD Simulations: A useful tool to investigate the effect of operating conditions on the growth of microorganisms in photobioreactor, IIT Bombay},(July 2017 - Jan 2018)
+
+{Project description: Numerical simulations are performed different rector configurations such as Applikon photobioreactor (stirred tank type rector), Flat plate reactor (Packer et al, 2011), bubble column reactor (Lab scale \& Pilot scale reactors of IIT Kharagpur). Simulations following the methodology developed earlier are carried out for growth of microalgae in various types of reactor configurations. Different types of sparger configurations are considered. The profiles of the light intensity in the reactor are determined using the CFD simulations for different cell concentrations. The light intensity profiles are fitted to Beer-Lambert curve to obtain the effect absorption coefficient of the culture in presence of dispersed air. Individual cell particles are tracked. Cross over frequencies between the dark and the light zones are determined. In addition, percentage time spent in the light zone by the microorganisms is also determined. CFD simulation results are in qualitative agreement with the experimental observations.}
+\begin{itemize}
+  \item Numerical simulations are performed different rector configurations such as Applikon photobioreactor (stirred tank type rector), Flat plate reactor (Packer et al, 2011), bubble column reactor (Lab scale \& Pilot scale reactors of IIT Kharagpur).
+  \item The growth of microalgae, as well as cyanobacteria, depends on the mixing of the nutrients, aeration rate, light and temperature distribution inside the reactor.
+  \item To develop a numerical scheme to understand the effect of mixing and light intensity on the growth kinetics of photosynthetic microorganisms.
+  \item Coupling of hydrodynamics by CFD and the growth kinetics of microalgae.
+\end{itemize}
+
+\item \textbf{CFD Based Analysis of Flow Phenomena in Disc and Doughnut Pulsed Column and Stirred Tank Photo Bioreactor, IIT Bombay},(July 2010 - July 2017)
+
+{My research work contains applied computational fluid dynamics tools to simulate and understand single and multiphase systems.}
+
+\textbf{Mathematical modelling for single phase flow in disc and doughnut pulsed column}: The hydrodynamics for single phase flow for wide range of Reynolds number.
+\begin{itemize}
+  \item Simulations are performed on three dimensional column with three units which is found to be the minimum number required to ensure periodicity at the central stage.
+  \item Profiles of non-dimensional velocity and turbulent kinetic energy are compared with the experimental observation.
+  \item The turbulent kinetic energy distribution obtained is obtained.
+  \item Based on the turbulent kinetic energy the average drop diameter is estimated 1.7 mm which can be used for multiphase simulations.
+\end{itemize}
+%\emph{This work is presented in AIChE Annual Meeting, 2013, San Francisco USA.}
+
+\textbf{Study of drop dynamics for pulsatile flow in disc and doughnut pulsed column}: The drop deformation, breakage and coalescence phenomena of droplets in DDPC using VOF model by considering dynamic contact angle for a range of Re, We, Ca and Fr.
+\begin{itemize}
+  \item The dynamic contact angle is implemented using user defined function (UDF).
+  \item Deformation of a single drop in a pulsed flow in DDPC is found to be in good agreement with experimental observation reported in literature.
+  \item Breakage and coalescence of multiple droplets are investigated.
+  \item The evolution of size distribution of the droplets is determine through post processing of simulation results.
+  \item The effect of operating parameters such as frequency and amplitude of oscillation as well as the fluid property such as the interfacial surface tension on droplet breakage and coalescence is investigated.
+\end{itemize}
+%\emph{Manuscript is under preparation for communication to Int. J. of Multiphase Flow.}
+
+\textbf{Two immiscible fluids flow for pulsatile flow in disc and doughnut pulsed column}: The study of hold-up distribution in DDPC using Eulerian-Eulerian model. 
+\begin{itemize}
+  \item Simulations are performed on three dimensional columns with six units.
+  \item The average hold-up of the dispersed phase is compared with reported simulations results and the error is found to be less than 10 $\%$.
+  \item The effect of density ratios i.e., $\rho_{c}/\rho_{d}$ <1 $\&$  $\rho_{c}/\rho_{d}$ >1, on the hold-up distribution of dispersed phase are investigated.
+  \item Dispersed phase is found to accumulate on the disc for the case when $\rho_{c}/\rho_{d}$ <1 while for the case with $\rho_{c}/\rho_{d}$ > 1 the accumulation of dispersed phase is beneath the disc.
+  \item The dependency of drop size on the distribution of dispersed phase are investigated.
+  \item Dispersed phase is found to accumulate on the disc for the case when the drop size is more while for the case with drop size is less the accumulation of dispersed phase is less on the disc.
+\end{itemize}
+%\emph{This in combination with part two is presented in AICHE Annual Meeting, 2015, Salt Lake City, USA.}
+
+
+\textbf{CFD analysis of the flow dynamics of microorganisms in dilute cultures in stirred tank photobioreactors}: CFD studies of Stirred tank photobioreactor presents the pathlines tracking in flow field, distribution of radiative flux and the growth kinetics of micro-algal biomass.
+\begin{itemize}
+  \item Numerical simulations are performed considering the gas sparging in the culture and radiative transport of light in a stirred tank photo bioreactor.
+  \item Simulation results show that the particles follow the fluid trajectory.
+  \item It is also observed that particles spend 45-65 $\%$ time in the light region; however the frequency of the crossover to the light zone depends on the RPM of the stirrer.
+  \item The spatial distribution of the cell particle concentration and the light intensity obtained from CFD simulation are used in the kinetic growth model.
+  \item The growth rate of the micro-organisms in log-phase growth is determined from the model and compared with the experiment.
+\end{itemize}
+%\emph{This work is published in BIORESOURCE TECHNOL. REPORTS}
+
+
+\item \textbf{Simulation and Modelling of a Liquid Drop Spreading on a Porous Solid Media, IIT Madras}, (July 2009 – May 2010)
+\begin{itemize}
+	\item Computational fluid dynamics (Simulation and Modelling): Wettability of polymeric fluids on porous reinforcements, to examine spreading of liquid drop on the porous solid media and simulating the spreading behaviour of radius and height of drop with respect to time and CFD solution.
+\end{itemize}
+
+\end{itemize}
+
+
+
+\end{document}
+
